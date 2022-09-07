@@ -10,7 +10,17 @@
     <h1 align="center">Web loam</h1>
     <hr>
     <br>
-    <div align="center"> ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?> 
+    <div align="center"> ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?>
+    <div align="center"> เป็นกระทู้หมายเลข 
+        <?php 
+        $x=$_GET["id"]%2;
+        if($x==0){
+            echo "คู่";
+        }
+        elseif($x==1){
+            echo "คี่";
+        }
+        ?>
     
     </div>
     <br>
@@ -21,7 +31,7 @@
         
     </table>
     <br>
-    <a href="index.html"><center>กลับไปหน้าหลัก</center></a>
+    <a href="index.php"><center>กลับไปหน้าหลัก</center></a>
     
 </body>
 </html>

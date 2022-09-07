@@ -9,6 +9,7 @@
 <body>
     <H1><center>Web loam</center></H1>
     <hr>
+    <form action="post.php" method="get">
     หมวดหมู่:
     <select name="Category">
         <option value="all">--ทั้งหมด--</option>
@@ -19,12 +20,14 @@
     <br>
     
     <ul>
-        <li><a href="post.php?id=1">กระทู้ที่1</a></li>
-        <li><a href="post.php?id=2">กระทู้ที่2</a></li>
-        <li><a href="post.php?id=3">กระทู้ที่3</a></li>
-        <li><a href="post.php?id=4">กระทู้ที่4</a></li>
-        <li><a href="post.php?id=5">กระทู้ที่5</a></li>
+        <?php
+            for($i=1;$i<=10;$i++){
+                echo "<li><a href=post.php?id="."$i". ">กระทู้ที่ ".$i."</a></li>";
+                
+            } 
+        ?>
+      
     </ul>
-    
+    </form>
 </body>
 </html>
