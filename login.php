@@ -1,3 +1,11 @@
+<?php
+
+    session_start();
+    if(isset($_SESSION['id'])){
+        header("location:index.php");
+        dei();
+    }
+?>    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +34,7 @@
             <tr><td colspan="2" align="center"><input type="submit" value="Login"></td></tr>
         </table>
     </form>
-    <h3><center> ถ้ายังไม่เป็นสมาชิก <a href="register.html">กรุณาสมัครสมาชิก</a></center></h3>
+    <h3><center> ถ้ายังไม่เป็นสมาชิก <a href="register.php">กรุณาสมัครสมาชิก</a></center></h3>
     
 </body>
 </html>
