@@ -8,6 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web loam</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <?php
     if(!isset($_SESSION['id'])){
@@ -15,6 +19,7 @@
 <body>
     
     <H1><center>Web loam</center></H1>
+    <?php include"nav.php"; ?>
     <hr>
     <form action="post.php" method="get">
     หมวดหมู่:
@@ -26,15 +31,15 @@
     <a href="login.php" style="float: right ;">เข้าสู่ระบบ</a>
     <br>
     
-    <ul>
+    <table class="table table-striped">
         <?php
             for($i=1;$i<=10;$i++){
-                echo "<li><a href=post.php?id="."$i". ">กระทู้ที่ ".$i."</a></li>";
+                echo "<tr><td><a href=post.php?id="."$i". ">กระทู้ที่ ".$i."</a></td></tr>";
                 
             } 
         ?>
       
-    </ul>
+    </table>
     </form>
 </body>
 <?php
