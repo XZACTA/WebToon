@@ -48,6 +48,7 @@
     ?>
     <body>
     <H1><center>Web loam</center></H1>
+    <?php include"nav.php"; ?>
     <hr>
     <form action="post.php" method="get">
     หมวดหมู่:
@@ -66,16 +67,18 @@
     <br>
     
     <ul>
+    <table class="table table-striped">
         <?php
             for($i=1;$i<=10;$i++){
                 echo"<li>";
-                echo "<a href=post.php?id="."$i". ">กระทู้ที่ ".$i."</a>";
+                echo "<tr><td><a href=post.php?id="."$i". ">กระทู้ที่ ".$i."</a></td></tr>";
                 if($_SESSION["role"]=='a'){
                     echo"&nbsp;&nbsp;&nbsp;<a href=delete.php?id=$i>ลบ</a>";
                 }
                 echo"</li>";
             } 
-        ?>
+        ?>     
+    </table>
       
     </ul>
     </form>

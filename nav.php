@@ -4,6 +4,11 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#d3d3d3;">
     <div class="container-fluid">
     <a href="index.php" class="navbar-brand"><i class="bi bi-house-door-fill"></i>HOME</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+           <a href="login.php"><i class="bi bi-pencil-square"></i>เข้าสู่ระบบ</a>
+        </li>
+    </ul>
     </div>
 </nav>
 <?php }else{ ?>
