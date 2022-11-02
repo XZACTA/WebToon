@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 align="center">Web loam</h1>
+    <h1 align="center">Web Loam</h1>
     <hr>
     <br>
     <div align="center"> ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?>

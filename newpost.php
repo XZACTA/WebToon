@@ -14,7 +14,7 @@ if(!isset($_SESSION['id'])){
     <title>Document</title>
 </head>
 <body>
-<h1><center>WebLoam</center></h1>
+<h1><center>Web Loam</center></h1>
 <hr>
 <table>
 <tr><td>
